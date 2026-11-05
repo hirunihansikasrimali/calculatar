@@ -76,6 +76,30 @@ function calculate(){
     display.value=eval(display.value);
 }
 
-function chooseOperation(operator){
-    appendValue(operator);
+let firstNumber="";
+let operator="";
+
+function chooseOperation(op){
+    firstNumber=display.value;
+    operator=op;
+    display.value="";
 }
+
+function calculateResult(){
+    let secondNumber=display.value;
+    let result;
+
+    let num1=Number(firstNumber);
+    let num2=Number(secondNumber);
+
+    if(operator==="+"){
+        result=num1+num2;
+    }else if(operator==="-"){
+        result=num1-num2;
+    }else if(operator==="*"){
+        result=num1*num2;
+    }else if(operator==="/"){
+        result=num1/num2;
+    }
+    display.value=result;
+}   
