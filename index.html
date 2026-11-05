@@ -10,12 +10,13 @@
 </head>
 <body>
     <div class="Calculator">
-        <h1>Calculator</h1>
+        <h1 class="title">Calculator</h1>
         <input type="text" id="txtDisplay" readonly>
         
         <div class="buttons">
 
             <button onclick="clearDisplay()">C</button>
+            <button onclick="clearDisplay()">AC</button>
             <button onclick="percentage()">%</button>
             <button onclick="divide()">/</button>
 
@@ -34,6 +35,7 @@
             <button onclick="number3()">3</button>
             <button onclick="add()">+</button>  
 
+            <button onclick="space()"> </button>
             <button onclick="number0()">0</button>
             <button onclick="decimal()">.</button>
             <button onclick="calculate()">=</button>

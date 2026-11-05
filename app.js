@@ -8,6 +8,14 @@ function clearDisplay(){
     display.value="";
 }
 
+function space(){
+    display.value+=" ";
+}
+
+function deleteDisplay(){
+    display.value="";
+}   
+
 function percentage(){
     display.value=parseFloat(display.value)/100;
 }
