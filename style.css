@@ -64,7 +64,10 @@ button:hover {
 }
 
 /* Red operator buttons */
-button.operator {
+button.divide,
+button.multiply,
+button.subtract,
+button.add {
     background-color: #b30000;
     color: white;
     border: none;
