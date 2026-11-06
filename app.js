@@ -100,13 +100,13 @@ function calculateResult(){
     let num1=Number(firstNumber);
     let num2=Number(secondNumber);
 
-    if(operator==="+"){
+    if(operator=="+"){
         result=num1+num2;
-    }else if(operator==="-"){
+    }else if(operator=="-"){
         result=num1-num2;
-    }else if(operator==="*"){
+    }else if(operator=="*"){
         result=num1*num2;
-    }else if(operator==="/"){
+    }else if(operator=="/"){
         result=num1/num2;
     }
     display.value=result;
